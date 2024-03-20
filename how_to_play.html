@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/help_icon.png" type="image/x-icon">
+<title>How to play</title>
+<style>
+  body{
+    background-color: #FF9432;
+  }
+  .img{
+    width: 100%;
+  }
+  .backbtn{
+    border-bottom: 2px solid white;
+    margin: 10px;
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    transition-duration: 0.3s;
+  }
+  .backimg{
+    width: 150px;
+  } 
+  .backbtn:hover{
+    border-bottom:2px solid rgb(119, 119, 119);
+  }
+  @media (max-width: 782px) {
+    .backbtn{
+    border-bottom: 2px solid white;
+    margin: 10px;
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    transition-duration: 0.3s;
+  }
+  .backimg{
+    width: 90px;
+  } 
+  }
+</style>
+</head>
+<body>
+<img class="img" src="images/Frame.png">
+<div class="backbtn">
+  <a href="index.html"><img class="backimg" src="images/back.svg" alt="back"></a>
+</div>
+</body>
+</html>

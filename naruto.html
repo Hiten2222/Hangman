@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hidden Leaf Mystery - Naruto-themed Hangman Game">
+    <title>Hidden Leaf Mystery</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="naruto.css">
+</head>
+<body>
+    <header>
+        <h1>Anime : </h1>
+        <h1 class="name">Naruto</h1><br>
+        <img class="scoreimg" src="images/trophy.svg" alt="">
+        <h2 class="score"> 0</h2>
+        <button id="pause-btn" onclick="pausegame()">
+            <img src="images/pause_btn.svg" alt="pause">
+        </button>
+    </header>
+    <div class="pause-menu-box">
+        <div class="pause-menu">
+            <h1>Pause Menu</h1>
+            <button onclick="resume()">Resume</button><br>
+            <button onclick="restart()">Restart</button><br>
+            <a href="index.html">
+            <button>Quit</button></a>
+        </div>
+    </div>
+    <div class="game-modal">
+        <div class="content">
+            <img src="#" alt="gif">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>rasengan</b></p>
+            <button class="play-again" onclick="getRandomWord()">Play Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hangman-box">
+            <img src="#" alt="hangman-img">
+            <h1>Hidden Leaf Mystery</h1>
+        </div>
+        <div class="game-box">
+            <ul class="word-display"></ul>
+            <h4 class="hint-text">Hint: <b></b></h4>
+            <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
+            <div class="keyboard">
+                <button onclick="initGame(this, 'a')">A</button>
+                <button onclick="initGame(this, 'b')">B</button>
+                <button onclick="initGame(this, 'c')">C</button>
+                <button onclick="initGame(this, 'd')">D</button>
+                <button onclick="initGame(this, 'e')">E</button>
+                <button onclick="initGame(this, 'f')">F</button>
+                <button onclick="initGame(this, 'g')">G</button>
+                <button onclick="initGame(this, 'h')">H</button>
+                <button onclick="initGame(this, 'i')">I</button>
+                <button onclick="initGame(this, 'j')">J</button>
+                <button onclick="initGame(this, 'k')">K</button>
+                <button onclick="initGame(this, 'l')">L</button>
+                <button onclick="initGame(this, 'm')">M</button>
+                <button onclick="initGame(this, 'n')">N</button>
+                <button onclick="initGame(this, 'o')">O</button>
+                <button onclick="initGame(this, 'p')">P</button>
+                <button onclick="initGame(this, 'q')">Q</button>
+                <button onclick="initGame(this, 'r')">R</button>
+                <button onclick="initGame(this, 's')">S</button>
+                <button onclick="initGame(this, 't')">T</button>
+                <button onclick="initGame(this, 'u')">U</button>
+                <button onclick="initGame(this, 'v')">V</button>
+                <button onclick="initGame(this, 'w')">W</button>
+                <button onclick="initGame(this, 'x')">X</button>
+                <button onclick="initGame(this, 'y')">Y</button>
+                <button onclick="initGame(this, 'z')">Z</button>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="scripts/naruto_word-list.js"></script>
+    <script src="scripts/naruto_script.js"></script>
+</body>
+
+</html>
